@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapping Without Temp Variable</title>
+    <script type="text/javascript">
+      let a = parseInt(prompt("Enter the value of a "));
+      let b = parseInt(prompt("Enter the value of b"));
+      console.log(`The value of a is ${a} and b is ${b}`);
+      // after swapping
+      // let's suppose user enters 4 for a and 5 for b then,
+      a = a + b; // 4+5=9 will be 9 here. hence a will be 9 now
+      b = a - b; // 9 - 5 = 4 , so now b will be 4
+      a = a - b; // 9 - 4 = 5 and now a will be 5
+      console.log(`After Swapping: \n The value of a is ${a} and b is ${b}`);
+    </script>
+  </head>
+  <body></body>
+</html>
