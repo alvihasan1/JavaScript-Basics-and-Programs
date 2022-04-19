@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
+    <script type="text/javascript">
+      function checkNumber() {
+        let userValue = document.getElementById("data").value;
+        if (userValue > 0) {
+          result = `${userValue} is a positive number`;
+          document.getElementById("result").innerHTML = result; //this line behaves like console.log
+        } else if (userValue < 0) {
+          result = `${userValue} is a negative number`;
+          document.getElementById("result").innerHTML = result;
+         } else if (userValue == 0) {
+
+            result = `${userValue} is Zero`; 
+            document.getElementById("result").innerHTML= result;
+          
+          } else {
+            result = `${userValue} is not a number`;
+            document.getElementById("result").innerHTML= result;
+          }
+          //this line behaves like console.log which is used to display data in an html element
+        }
+      
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="data" />
+    <button onclick="checkNumber()">Check</button>
+    <h2 id="result"></h2>
+  </body>
+</html>
